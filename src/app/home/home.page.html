@@ -1,12 +1,50 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-header></ion-header>
+<ion-content>
+  <div class="Container" >
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="Logo">
+            <img src="../../assets/images/usp_logo.jpg" style="width: 100%;">
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="title">
+            <div class="icon">
+                <ion-icon name="school" color="white"></ion-icon>
+            </div>
+            Enrollment System Login
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="Login">
+            <ion-list inset >
+              <ion-item id="rounded">
+                <ion-label>Username:</ion-label>
+                <br>
+                <ion-input type="text" name="username" placeholder="Enter Username Here"></ion-input>
+              </ion-item>
+              <ion-item id="rounded">
+                  <ion-label>Password:</ion-label>
+                <ion-input type="text" name="password" placeholder="Enter Password Here"></ion-input>
+              </ion-item>
+            </ion-list>
+            <div class="LoginButton">
+              <ion-button class="LoginButton" full type="submit" (click)="Go()">
+                Login
+              </ion-button>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="footer">
+      <p>@Copyright CS415: Group 2</p>
+    </div>
+  </div>
 </ion-content>
+<ion-footer></ion-footer>
