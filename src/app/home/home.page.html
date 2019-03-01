@@ -26,15 +26,15 @@
               <ion-item id="rounded">
                 <ion-label>Username:</ion-label>
                 <br>
-                <ion-input type="text" name="username" placeholder="Enter Username Here"></ion-input>
+                <ion-input type="text" name="username" [(ngModel)]="data.username" placeholder="Enter Username Here"></ion-input>
               </ion-item>
               <ion-item id="rounded">
                   <ion-label>Password:</ion-label>
-                <ion-input type="text" name="password" placeholder="Enter Password Here"></ion-input>
+                <ion-input type="text" name="password" [(ngModel)]="data.password" placeholder="Enter Password Here"></ion-input>
               </ion-item>
             </ion-list>
             <div class="LoginButton">
-              <ion-button class="LoginButton" full type="submit" (click)="Go()">
+              <ion-button class="LoginButton" full (click)="submit()">
                 Login
               </ion-button>
             </div>
